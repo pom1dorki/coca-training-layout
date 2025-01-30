@@ -1,0 +1,109 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    block title
+      title= "COCA"
+    link(rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png")
+    link(rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png")
+    link(rel="stylesheet" href="./css/styles.css")
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous")
+    link(href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet")
+  body
+    header.header
+      .header__logo-block
+        img.header__logo(src="./images/logo.svg", alt="logo of company")
+
+      nav.header__menu.navigation
+        ul.navigation__list
+          li.navigation__item
+            a.navigation__link(href="#") Home
+          li.navigation__item
+            a.navigation__link(href="#") About
+          li.navigation__item
+            a.navigation__link(href="#") Blog
+          li.navigation__item
+            a.navigation__link(href="#") Pricing
+          li.navigation__item
+            a.navigation__link(href="#") Contact Us
+
+    block content
+
+    block footer
+      footer.footer(class=footerClass)
+        .footer__top
+          .footer__title-block
+            h2.footer__title Think beyond the wave
+            p.footer__desc Ask about Sans products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help
+          .footer__link-shop-block
+            a.footer__link-shop
+
+        .footer__bottom
+          .footer__logo-block
+            img.footer__logo(src=footerLogoSrc)
+            p.footer__text We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs
+          .footer__nav
+            ul.footer__nav-list
+              li.footer__nav-item
+                p.footer__nav-title Company
+              li.footer__nav-item
+                a.footer__nav-link(href="#") About
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Pricing
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Jobs
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Blog
+
+            ul.footer__nav-list
+              li.footer__nav-item
+                p.footer__nav-title Product
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Sales Software
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Marketplace
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Terms & Conditions
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Privacy Policy
+
+            ul.footer__nav-list
+              li.footer__nav-item
+                p.footer__nav-title Discover
+              li.footer__nav-item
+                a.footer__nav-link(href="#") CRM Comparision
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Partner Program
+              li.footer__nav-item
+                a.footer__nav-link(href="#") What is CRM
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Resource
+
+            ul.footer__nav-list
+              li.footer__nav-item
+                p.footer__nav-title Help Center
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Community
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Knowledge Base
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Academy
+              li.footer__nav-item
+                a.footer__nav-link(href="#") Support
+
+        .footer__mobile-block
+          ul.footer__mobile-nav
+            li.footer__mobile-nav-item
+              a.footer__mobile-nav-link(href="#") Privacy Policy
+            li.footer__mobile-nav-item
+              a.footer__mobile-nav-link(href="#") Terms & Conditions
+            li.footer__mobile-nav-item
+              a.footer__mobile-nav-link(href="#") Support
+
+        .footer__copyright-block
+          a.footer__copyright(href="https://verstaem.online/") © Copyright 2023, All Rights Reserved
+
+    script(type="module" src="./js/index.js")
