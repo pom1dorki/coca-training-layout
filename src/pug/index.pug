@@ -1,2 +1,116 @@
 extends ./layouts/main-layout.pug
 
+block content
+  main.main-home
+    section.hero
+      .hero__content-block
+        .hero__title-block
+          h2.hero__title Digitally forward creative
+        .hero__desc-block
+          p.hero__desc When it comes to interactive marketing, we've got you covered. Be where the world is going
+        .hero__form-block
+          form.hero__form(action="/submit" method="POST")
+            input.hero__form-input(type="email" placeholder="Enter to email")
+            button.hero__form-button(type="submit") Try for free
+      .hero__img-block
+        img(src="./images/hero-table.png", srcset="./images/hero-table.png 1x, ./images/hero-table@2x.png 2x, ./images/hero-table@3x.png 3x", alt="financial indicators")
+
+    section.solutions
+      .solutions__title-block
+        h2.solutions__title Coca help our client solve complex customer problems with date that does more.
+        p.solutions__desc Our platform offers the modern enterprise full control of how date can be access and used with industry leading software solutions for identity, activation, and date collaboration
+      .solutions__features-block
+        ul.solutions__features
+          li.solutions__feature
+            h3.solutions__feature-title Build your date fundamental
+            p.solutions__feature-desc Build access to date, develop valuable business insights and drive revenue while maintaining full control over access and use of date at all times.
+          li.solutions__feature
+            h3.solutions__feature-title Measure more effective
+            p.solutions__feature-desc Effectively measure people-based campaigns with the freedom to choose from best-of breed partners to optimize and drive media innovation.
+          li.solutions__feature
+            h3.solutions__feature-title Activate your date
+            p.solutions__feature-desc Accurately address your specific audiences at scale across any channel, platform, publisher or network and safely translate date between identity space to improve results.
+          li.solutions__feature
+            h3.solutions__feature-title Strengthen consumer privacy
+            p.solutions__feature-desc Protect your customer date with leading privacy-preserving technologies and advanced techniques to minimize date movement while still enabling insight generation.
+
+    section.revenue-growth
+      .revenue-growth__img-block
+        img(src="./images/revenue-growth-img.png", srcset="./images/revenue-growth-img.png 1x, ./images/revenue-growth-img@2x.png 2x, ./images/revenue-growth-img@3x.png 3x", alt="/" loading="lazy")
+      .revenue-growth__content-block
+        .revenue-growth__title-block
+          h2.revenue-growth__title Passion to increase company revenue up to 85%
+          p.revenue-growth__desc Automate your sales, marketing and service in one platform. Avoid date leaks and enable consistent messaging
+        .revenue-growth__benefits-block
+          ul.revenue-growth__benefits
+            li.revenue-growth__benefit  Close more deals with single - page contact managment
+            li.revenue-growth__benefit  Enjoy one-click calling, call scripts and voicemail automation
+            li.revenue-growth__benefit  Take stages and milestones of your deals to keep the sales process an track
+
+    section.successes
+      .successes__img-block
+        img(src="./images/successes.png", alt="")
+      .successes__title-block
+        h2.successes__title Lift your business to new heights with our digital marketing services
+        p.successes__desc To build software that gives customer facing teams in small and medium-sized businesses the ability to create rewarding and long-lasting relationships with customers
+      .successes__list-block
+        ul.successes__list
+          li.successes__item
+            span.successes__item-amount 17k
+            p.successes__item-desc Happy customers on worldwide
+          li.successes__item
+            span.successes__item-amount 15+
+            p.successes__item-desc Hours of work experience
+          li.successes__item
+            span.successes__item-amount 50+
+            p.successes__item-desc Creativity & passionate members
+          li.successes__item
+            span.successes__item-amount 100+
+            p.successes__item-desc Integrations lorem ipsum integrations
+
+    article.partners
+      h2.visually-hidden Partners our company
+      .partners__content-block
+        span.partners__amount 890+
+        p.partners__desc some big companies that we work with, and trust us very much
+      .partners__list-block
+        ul.partners__list
+          li.partners__item
+            img(src="./images/svg/airbnb-logo.svg", alt="Airbnb")
+          li.partners__item
+            img(src="./images/svg/amazon-logo.svg", alt="Amazon")
+          li.partners__item
+            img(src="./images/svg/fedex-logo.svg", alt="FedEx")
+          li.partners__item
+            img(src="./images/svg/microsoft-logo.svg", alt="Microsoft")
+          li.partners__item
+            img(src="./images/svg/google-logo.svg", alt="Google")
+          li.partners__item
+            img(src="./images/svg/ola-logo.svg", alt="OLA")
+          li.partners__item
+            img(src="./images/svg/walmart-logo.svg", alt="Walmart")
+          li.partners__item
+            img(src="./images/svg/oyo-logo.svg", alt="OYO")
+
+    section.business-growth
+      .business-growth__title-block
+        h2.business-growth__title Advertise, analyze, and optimize! We do it all for you
+        p.business-growth__desc Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
+      .business-growth__list-block
+        ul.business-growth__list
+          li.business-growth__item
+            img.business-growth__img(src="./images/business-growth-1.png", alt="#")
+            h3.business-growth__title Lead happiness for customers
+            p.business-growth__desc Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
+          li.business-growth__item
+            img.business-growth__img(src="./images/business-growth-2.png", alt="#")
+            h3.business-growth__title Mutually support each other
+            p.business-growth__desc Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
+          li.business-growth__item
+            img.business-growth__img(src="./images/business-growth-3.png", alt="#")
+            h3.business-growth__title Have fun growing together
+            p.business-growth__desc Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
+          li.business-growth__item
+            img.business-growth__img(src="./images/business-growth-4.png", alt="#")
+            h3.business-growth__title Make Your Business Grow
+            p.business-growth__desc Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
