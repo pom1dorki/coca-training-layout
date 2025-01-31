@@ -1,5 +1,8 @@
 extends ./layouts/main-layout.pug
 
+block footerVars
+  - var footerLogoSrc = "./images/svg/logo.svg"
+
 block content
   main.main-home
     section.hero
@@ -114,3 +117,50 @@ block content
             img.business-growth__img(src="./images/business-growth-4.png", alt="#")
             h3.business-growth__title Make Your Business Grow
             p.business-growth__desc Build more meaningful and lasting relationships - better understand their needs, identify new opportunities to help address any problems faster
+
+    section.blog
+      .blog__title-block
+        h2.blog__title Trending news from Coca
+        p.blog__desc we have some new Service to pamper you
+      .blog__slider
+        ul.blog__slider-list
+          li.blog__slider-item
+            figure.blog__slider-figure
+              img.blog__slider-img(src="./images/blog-slider-1.png", alt="#")
+              figcaption.blog__slider-figcaption
+                .blog__slider-data-block
+                  span.blog__slider-data-date Published in Insight Jan 30, 2021
+                  span.blog__slider-data-autor by : Albert Sans
+                h3.blog__slider-title What makes an authentic employee profile, and why does it matter?
+          li.blog__slider-item
+            figure.blog__slider-figure
+              img.blog__slider-img(src="./images/blog-slider-2.png", alt="#")
+              figcaption.blog__slider-figcaption
+                .blog__slider-data-block
+                  span.blog__slider-data-date Published in Insight Jan 30, 2021
+                  span.blog__slider-data-autor by : Albert Sans
+                h3.blog__slider-title How to build a Kaylen relationship with a good company
+        .blog__slider-btn-block
+          button.blog__slider-btn--prev(type="button")
+          button.blog__slider-btn--next(type="button")
+
+    section.reviews
+      .reviews__title-block
+        h2.reviews__title What our customer are saying
+        p.reviews__desc We are trusted numerous companies from different business to meet their needs
+      .reviews__slider
+        ul.reviews__slider-list
+          li.reviews__slider-item
+            .reviews__slider-rating-block
+              img.reviews__slider-rating(src="./images/svg/rating.svg", alt="#")
+            .reviews__slider-text-block
+              p.reviews__slider-text “With Agency the results are very satisfying. wrapped with Hight quality and innovative design that makes a surge of visitors on my website”
+            .reviews__slider-autor-block
+              .reviews__slider-avatar-block
+                img.reviews__slider-avatar(src="./images/review-avatar.png" alt="#")
+                .reviews__slider-name-block
+                  span.reviews__slider-name Renee Wells
+                  span.reviews__slider-job Product Designer, Quotient
+        .reviews__slider-btn-block
+          button.reviews__slider-btn--prev(type="button")
+          button.reviews__slider-btn--next(type="button")
