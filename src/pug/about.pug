@@ -1,0 +1,63 @@
+extends ./layouts/main-layout.pug
+
+block footerVars
+  - var footerLogoSrc = "./images/svg/black-logo.svg"
+
+block content
+  main.main-about
+    section.about
+      .about__title-block
+        h1.about__title Everything you need to get the attention of your audience
+        p.about__desc Our digital agency helps clients develop, implement and maintain successful digital marketing strategies across all channels. Also work with you to build your website and create online businesses that grow.
+      .about__content-block
+        img.about__img--left(src="./images/about/about-main-left.png", srcset="./images/about/about-main-left.png 1x, ./images/about/about-main-left@2x.png 2x", alt="#")
+        .about__text-wrapper
+          img.about__img--main(src="./images/about/about-main-center.png", srcset="./images/about/about-main-center.png 1x, ./images/about/about-main-center@2x.png 2x", alt="#")
+          .about__text-block
+            h2.about__subtitle What we believe in
+            p.about__text Over the years at Sans, we’ve put a lot of thought into what it is that makes us who we are. The qualities that unite us, that make us such an effective team, and...
+          .about__btn-block
+            button.about__btn(type="button") See Details ->
+        img.about__img--right(src="./images/about/about-main-right.png", srcset="./images/about/about-main-right.png 1x, ./images/about/about-main-right@2x.png 2x", alt="#")
+      a.about__link-contacts(href="./contacts.html")
+        img(src="./images/svg/about-link-contacts.svg", alt="#")
+
+    section.mission
+      h2.mission__title Powerful ideas & sales acceleration
+      p.mission__desc We are a software development firm specializing in digital products. We build beautiful, functional and cross-platform solutions that are accessible to all.
+
+    section.team
+      .team__title-block
+        h3.team__title Meet our team of creators, designers, and world-class problem solvers
+        p.team__desc To become the company that customers want, it takes a group of passionate people. Get to know the people who lead
+      .team__slider
+        ul.team__slider-list
+          li.team__slider-item
+            img.team__slider-img(src="./images/about/team-member-1.png", srcset="./images/about/team-member-1.png 1x, ./images/about/team-member-1@2x.png 2x", alt="")
+            .team__slider-name-block
+              span.team__slider-name Arlyne Stefano
+              span.team__slider-job Founder & CEO
+          li.team__slider-item
+            img.team__slider-img(src="./images/about/team-member-2.png", srcset="./images/about/team-member-2.png 1x, ./images/about/team-member-2@2x.png 2x", alt="")
+            .team__slider-name-block
+              span.team__slider-name Katy Cristy
+              span.team__slider-job Chief Technology Officer
+          li.team__slider-item
+            img.team__slider-img(src="./images/about/team-member-3.png", srcset="./images/about/team-member-3.png 1x, ./images/about/team-member-3@2x.png 2x", alt="")
+            .team__slider-name-block
+              span.team__slider-name Roger Dzawin
+              span.team__slider-job Chief Technology Officer
+          li.team__slider-item
+            img.team__slider-img(src="./images/about/team-member-1.png", srcset="./images/about/team-member-1.png 1x, ./images/about/team-member-1@2x.png 2x", alt="")
+            .team__slider-name-block
+              span.team__slider-name Arlyne Stefano
+              span.team__slider-job Founder & CEO
+        .team__slider-buttons
+          button.team__slider-btn--prev(type="button")
+          button.team__slider-btn--next(type="button")
+      .team__footer
+        .team__footer-title-block
+          h3.team__footer-title Join our team, The one with the master touch
+        .team__footer-content-block
+          p.team__footer-text We believe it takes great people to make a great product. That’s why we hire not only the perfect professional fits, but people who embody our company values.
+          a.team__footer-link-job(href="#") See Open Position ->
