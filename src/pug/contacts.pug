@@ -4,3 +4,76 @@ block footerVars
   - var footerLogoSrc = "./images/svg/black-logo.svg"
 
 block content
+  main.main-contacts
+    section.contacts
+      .contacts__title-block
+        h2.contacts__title Contact our team to find out more
+      .contacts__map-block
+        img(src="./images/contacts/map.png", srcset="./images/contacts/map.png 1x, ./images/contacts/map2@2x.png 2x, ./images/contacts/map@3x.png 3x", alt="#")
+      address.contacts__address
+        .contacts__support
+          h3.contacts__support-title Support
+          p.contacts__support-desc Our friendly team is here to help.
+          a(href="mailto:support@sans.com") support@sans.com
+        .contacts__sales
+          h3.contacts__support-title Sales
+          p.contacts__support-desc Questions or queries? Get in touch!
+          a(href="mailto:sales@sans.com") sales@sans.com
+        .contacts__phone
+          h3.contacts__support-title Phone
+          p.contacts__support-desc Mon-Fri from 8am to 5pm.
+          a(href="tel:+14353457655") +1 (435) 345-7655
+
+    article.partners
+      h2.visually-hidden Partners our company
+      .partners__content-block
+        span.partners__amount 890+
+        p.partners__desc some big companies that we work with, and trust us very much
+      .partners__list-block
+        ul.partners__list
+          li.partners__item
+            img(src="./images/svg/airbnb-logo.svg", alt="Airbnb")
+          li.partners__item
+            img(src="./images/svg/amazon-logo.svg", alt="Amazon")
+          li.partners__item
+            img(src="./images/svg/fedex-logo.svg", alt="FedEx")
+          li.partners__item
+            img(src="./images/svg/microsoft-logo.svg", alt="Microsoft")
+          li.partners__item
+            img(src="./images/svg/google-logo.svg", alt="Google")
+          li.partners__item
+            img(src="./images/svg/ola-logo.svg", alt="OLA")
+          li.partners__item
+            img(src="./images/svg/walmart-logo.svg", alt="Walmart")
+          li.partners__item
+            img(src="./images/svg/oyo-logo.svg", alt="OYO")
+
+    section.feedback
+      .feedback__title-block
+        h1.feedback__title Let’s level up your brand
+        p.feedback__desc You can reach us anytime
+          a.feedback__email(href="mailto:hellosansbrothers@gmail.com") hellosansbrothers@gmail.com
+      form.feedback__form(action="#" method="POST")
+        .feedback__first-name-block
+          label.feedback__first-name-label(for="first-name") First name
+          input.feedback__first-name(type="text" placeholder="First name" id="first-name" required)
+        .feedback__second-name-block
+          label.feedback__second-name-label(for="second-name") Second name
+          input.feedback__second-name(type="text" placeholder="Second name" id="second-name" required)
+        .feedback__email-block
+          label.feedback__email-label(for="email") Email
+          input.feedback__email(type="email" placeholder="you@company.com" id="email" required)
+        .feedback__phone-number-block
+          select.feedback__phone-number-select
+            option(value="+1") +1 (US)
+            option(value="+1") +44 (UK)
+            option(value="+1") +7 (RU)
+            option(value="+1") +49 (DE)
+          .feedback__phone-number-wrapper
+            label.feedback__phone-number-label(for="phone-number") Phone number
+            input.feedback__phone-number(type="tel" placeholder="+1 (555) 000-0000" id="phone-number" pattern="[0-9]{3} [0-9]{3} [0-9]{4}")
+        .feedback__message-block
+          label(for="message") Message
+          textarea(name="message" placeholder="Leave us a message...")
+        .feedback__btn-block
+          button(type="submit") Get Started
