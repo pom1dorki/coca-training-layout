@@ -40,76 +40,77 @@ html(lang="en")
 
     block footer
       footer.footer(class=footerClass)
-        .footer__top
-          .footer__title-block
-            h2.footer__title Think beyond the wave
-            p.footer__desc Ask about Sans products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help
-          .footer__link-shop-block
-            a.footer__link-shop(href="") Try for free
+        .footer__wrapper
+          .footer__top
+            .footer__title-block
+              h2.footer__title Think beyond the wave
+              p.footer__desc Ask about Sans products, pricing, implementation, or anything else. Our highly trained reps are standing by, ready to help
+            .footer__link-shop-block
+              a.footer__link-shop(class=footerLinkClass, href="") Try for free
 
-        .footer__bottom
-          .footer__logo-block
-            img.footer__logo(src=footerLogoSrc)
-            p.footer__text We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs
-          .footer__nav
-            ul.footer__nav-list
-              li.footer__nav-item
-                p.footer__nav-title Company
-              li.footer__nav-item
-                a.footer__nav-link(href="#") About
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Pricing
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Jobs
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Blog
+          .footer__bottom
+            .footer__logo-block
+              img.footer__logo(src=footerLogoSrc)
+              p.footer__text(class=footerTextClass) We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs
+            .footer__nav
+              ul.footer__nav-list
+                li.footer__nav-item
+                  p.footer__nav-title Company
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") About
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Pricing
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Jobs
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Blog
 
-            ul.footer__nav-list
-              li.footer__nav-item
-                p.footer__nav-title Product
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Sales Software
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Marketplace
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Terms & Conditions
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Privacy Policy
+              ul.footer__nav-list
+                li.footer__nav-item
+                  p.footer__nav-title Product
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Sales Software
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Marketplace
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Terms & Conditions
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Privacy Policy
 
-            ul.footer__nav-list
-              li.footer__nav-item
-                p.footer__nav-title Discover
-              li.footer__nav-item
-                a.footer__nav-link(href="#") CRM Comparision
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Partner Program
-              li.footer__nav-item
-                a.footer__nav-link(href="#") What is CRM
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Resource
+              ul.footer__nav-list
+                li.footer__nav-item
+                  p.footer__nav-title Discover
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") CRM Comparision
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Partner Program
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") What is CRM
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Resource
 
-            ul.footer__nav-list
-              li.footer__nav-item
-                p.footer__nav-title Help Center
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Community
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Knowledge Base
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Academy
-              li.footer__nav-item
-                a.footer__nav-link(href="#") Support
+              ul.footer__nav-list
+                li.footer__nav-item
+                  p.footer__nav-title Help Center
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Community
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Knowledge Base
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Academy
+                li.footer__nav-item
+                  a.footer__nav-link(class=footerNavLinkClass, href="#") Support
 
-        .footer__mobile-block
-          ul.footer__mobile-nav
-            li.footer__mobile-nav-item
-              a.footer__mobile-nav-link(href="#") Privacy Policy
-            li.footer__mobile-nav-item
-              a.footer__mobile-nav-link(href="#") Terms & Conditions
-            li.footer__mobile-nav-item
-              a.footer__mobile-nav-link(href="#") Support
+          .footer__mobile-block
+            ul.footer__mobile-nav
+              li.footer__mobile-nav-item
+                a.footer__mobile-nav-link(href="#") Privacy Policy
+              li.footer__mobile-nav-item
+                a.footer__mobile-nav-link(href="#") Terms & Conditions
+              li.footer__mobile-nav-item
+                a.footer__mobile-nav-link(href="#") Support
 
-        .footer__copyright-block
-          a.footer__copyright(href="https://verstaem.online/") © Copyright 2023, All Rights Reserved
+          .footer__copyright-block
+            a.footer__copyright(href="https://verstaem.online/") © Copyright 2023, All Rights Reserved
 
     script(type="module" src="./js/index.js")
