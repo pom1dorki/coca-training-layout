@@ -7,36 +7,38 @@ block footerVars
 block content
   main.main-home
     section.hero
-      .hero__content-block
-        .hero__title-block
-          h2.hero__title Digitally forward creative
-        .hero__desc-block
-          p.hero__desc When it comes to interactive marketing, we've got you covered. Be where the world is going
-        .hero__form-block
-          form.hero__form(action="/submit" method="POST")
-            input.hero__form-input(type="email" placeholder="Enter to email")
-            button.hero__form-button(type="submit") Try for free
-      .hero__img-block
-        img(src="./images/home/hero-table.png", srcset="./images/home/hero-table.png 1x, ./images/home/hero-table@2x.png 2x, ./images/home/hero-table@3x.png 3x", alt="financial indicators")
+      .hero__wrapper
+        .hero__content-block
+          .hero__title-block
+            h2.hero__title Digitally forward creative
+          .hero__desc-block
+            p.hero__desc When it comes to interactive marketing, we've got you covered. Be where the world is going
+          .hero__form-block
+            form.hero__form(action="/submit" method="POST")
+              input.hero__form-input(type="email" placeholder="Enter to email")
+              button.hero__form-button(type="submit") Try for free
+        .hero__img-block
+          img.hero__img(src="./images/home/hero-table.png", srcset="./images/home/hero-table.png 1x, ./images/home/hero-table@2x.png 2x, ./images/home/hero-table@3x.png 3x", alt="financial indicators")
 
     section.solutions
-      .solutions__title-block
-        h2.solutions__title Coca help our client solve complex customer problems with date that does more.
-        p.solutions__desc Our platform offers the modern enterprise full control of how date can be access and used with industry leading software solutions for identity, activation, and date collaboration
-      .solutions__features-block
-        ul.solutions__features
-          li.solutions__feature
-            h3.solutions__feature-title Build your date fundamental
-            p.solutions__feature-desc Build access to date, develop valuable business insights and drive revenue while maintaining full control over access and use of date at all times.
-          li.solutions__feature
-            h3.solutions__feature-title Measure more effective
-            p.solutions__feature-desc Effectively measure people-based campaigns with the freedom to choose from best-of breed partners to optimize and drive media innovation.
-          li.solutions__feature
-            h3.solutions__feature-title Activate your date
-            p.solutions__feature-desc Accurately address your specific audiences at scale across any channel, platform, publisher or network and safely translate date between identity space to improve results.
-          li.solutions__feature
-            h3.solutions__feature-title Strengthen consumer privacy
-            p.solutions__feature-desc Protect your customer date with leading privacy-preserving technologies and advanced techniques to minimize date movement while still enabling insight generation.
+      .solutions__wrapper
+        .solutions__title-block
+          h2.solutions__title Coca help our client solve complex customer problems with date that does more.
+          p.solutions__desc Our platform offers the modern enterprise full control of how date can be access and used with industry leading software solutions for identity, activation, and date collaboration
+        .solutions__features-block
+          ul.solutions__features
+            li.solutions__feature
+              h3.solutions__feature-title Build your date fundamental
+              p.solutions__feature-desc Build access to date, develop valuable business insights and drive revenue while maintaining full control over access and use of date at all times.
+            li.solutions__feature
+              h3.solutions__feature-title Measure more effective
+              p.solutions__feature-desc Effectively measure people-based campaigns with the freedom to choose from best-of breed partners to optimize and drive media innovation.
+            li.solutions__feature
+              h3.solutions__feature-title Activate your date
+              p.solutions__feature-desc Accurately address your specific audiences at scale across any channel, platform, publisher or network and safely translate date between identity space to improve results.
+            li.solutions__feature
+              h3.solutions__feature-title Strengthen consumer privacy
+              p.solutions__feature-desc Protect your customer date with leading privacy-preserving technologies and advanced techniques to minimize date movement while still enabling insight generation.
 
     section.revenue-growth
       .revenue-growth__img-block
